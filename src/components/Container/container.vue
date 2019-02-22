@@ -81,6 +81,8 @@
           <div>
             <el-pagination background layout="prev, pager, next" :total="200"> </el-pagination>
           </div>
+          <h3>日期控件</h3>
+          <div><DatePicker></DatePicker></div>
         </el-main>
       </el-container>
     </el-container>
@@ -89,6 +91,7 @@
 
 <script>
 import InNumber from '@/components/InNumber'
+import DatePicker from '@/components/Datepicker'
 export default {
   data() {
     const item = {
@@ -141,7 +144,8 @@ export default {
     this.restaurants = this.loadAll()
   },
   components: {
-    InNumber
+    InNumber,
+    DatePicker
   }
 }
 </script>
